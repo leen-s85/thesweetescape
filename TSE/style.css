@@ -1,0 +1,264 @@
+html{
+    scroll-behavior: smooth;
+}
+main{
+    padding-top: 50px;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#FFF7F1;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FDE2E4;
+    position:fixed;
+    width:100%;
+    z-index: 1000;
+    padding-top:5px;
+    padding-bottom: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+#logo{
+    color:#3E3E3E;
+    font-weight: bolder;
+    font-family: 'Baloo 2', cursive;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:50px;
+    align-items: center;
+}
+#menubar{
+    display: none;
+}
+a{
+    color:#3E3E3E;
+    font-family: cursive;
+    text-decoration: none;
+}
+a:hover{
+    color:#FFC8DD;
+    transition: all 0.3s ease-in-out;
+}
+a:active{
+    color:#FFC8DD;
+}
+i{
+    color:#3E3E3E;
+    gap: 20px;
+}
+i:hover{
+    color:#FFC8DD;
+    transition: all 0.3s ease-in-out;
+}
+.brand{
+    font-size: 34px;
+    text-align: center;
+    font-family:'Satisfy', cursive;
+    color:#3E3E3E;
+}
+.description{
+    color:#6D6875;
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
+/* parent1 is the section of image and button */
+.parent1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+#cake1{
+    height:auto;
+    width:100%;
+    border-radius: 16px;
+    padding: 0px 10px;
+}
+.button{
+    font-size: 80%;
+    position:absolute;
+    top:85%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #3E3E3E;
+    background-color: #FDE2E4;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 6px;
+    size: 30%;
+}
+.aboutus{
+    display:flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.abtusimg{
+    height:270px;
+    width:350px;
+    border-radius:16px;
+    flex-shrink:0;
+}
+.abtus{
+    flex:1;
+    flex-direction:column;
+    align-items: flex-start;
+    padding:50px;
+}
+.abt,.abttext{
+    font-family: cursive;
+}
+.abt{
+    color:#3E3E3E;
+}
+.abttext{
+    color:#6D6875
+}
+.menusection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    width:100%;
+    flex-wrap: wrap;
+}
+.menubutton{
+    color: #3E3E3E;
+    background-color: #FDE2E4;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 6px;
+    margin-left: 15px;
+}
+.menudescr{
+    flex-direction: column;
+    font-family: cursive;
+    color:#3E3E3E;
+}
+.menudescr h1{
+    text-align: center;
+    padding-right: 10px;
+}
+.cakemenu,.tiramisumenu,.drinkmenu{
+    flex-direction: column;
+    padding:10px;
+
+}
+.menuimg{
+    border-radius: 16px;
+    height: 200px;
+    width:300px;
+}
+.caption{
+    margin-top: 5px;
+    display:flex;
+    flex-direction: column;
+    background-color:#FDE2E4;
+    text-align: center;
+    border-radius: 10px;
+    font-family: cursive;
+    color: #3E3E3E;
+    height:125px;
+    width:300px;
+}
+.section4{
+    margin-top: 100px;
+}
+.community{
+    font-size: 24px;
+    font-family: cursive;
+    color:#3E3E3E;
+    text-align:center;
+}
+.staff{
+    display:flex;
+    text-align: center;
+    color:#3E3E3E
+}
+.see-more{
+    color: #3E3E3E;
+    background-color: #FDE2E4;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 6px;
+}
+.lena,.tarik,.aylin{
+    padding:10px;
+    font-family: cursive;
+}
+.footer{
+    font-family: cursive;
+    background-color: #FDE2E4;
+    margin-top: 100px;
+}
+.final{
+    padding:10px 0px;
+    text-align: center;
+    color:#3E3E3E;
+}
+@media (max-width: 768px) {
+    main{
+        padding-top:250px;
+    }
+    header{
+        padding:20px 0px;
+        display:flex;
+        align-items: center;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        position:absolute;
+        top:100%;
+        left: 0;
+        margin:0;
+        width:100%;
+        box-shadow:0 5px 5px rgba(0,0,0,0.1);
+        background-color: #FDE2E4;
+        z-index:1000;
+        padding:15px 0px;
+
+    }
+    header #menubar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:1;
+    }
+    .menusection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menudescr {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cakemenu,
+    .tiramisumenu,
+    .drinkmenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menuimg,
+    .caption {
+        width: 90%;
+        max-width: 300px;
+    }
+}
